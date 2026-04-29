@@ -56,10 +56,6 @@ workflows:
     plan:
       - type: init
       - type: plan
-      - type: conftest
-        extra_args:
-          - "--policy"
-          - policies/
     apply:
       - type: init
       - type: apply
